@@ -1,0 +1,846 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"T",
+				"TEMPLATES"
+			],
+			[
+				"Venue",
+				"Venue"
+			],
+			[
+				"Event",
+				"EventForm"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"Venu",
+				"VenueForm"
+			],
+			[
+				"ven",
+				"venue_id"
+			],
+			[
+				"venu",
+				"venues"
+			],
+			[
+				"ve",
+				"venue_id"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"ad",
+				"address"
+			],
+			[
+				"db",
+				"db_layer"
+			],
+			[
+				"y",
+				"y_layer"
+			],
+			[
+				"df",
+				"df_layer"
+			],
+			[
+				"fo",
+				"forward_step"
+			],
+			[
+				"event",
+				"event_list"
+			],
+			[
+				"even",
+				"event_list"
+			],
+			[
+				"curr",
+				"current_year"
+			],
+			[
+				"month",
+				"month_number"
+			],
+			[
+				"app",
+				"apply_layer"
+			],
+			[
+				"value",
+				"value1"
+			],
+			[
+				"valu",
+				"value0"
+			],
+			[
+				"x_",
+				"x_res"
+			],
+			[
+				"n",
+				"n_imgs"
+			],
+			[
+				"ana",
+				"analisado"
+			],
+			[
+				"WL",
+				"WL_2020-07"
+			],
+			[
+				"fol",
+				"folder"
+			],
+			[
+				"tes",
+				"test_reference"
+			],
+			[
+				"load",
+				"load_reference_image"
+			],
+			[
+				"si",
+				"sigmoid"
+			],
+			[
+				"show",
+				"show_reference_image"
+			],
+			[
+				"sh",
+				"shape"
+			],
+			[
+				"x",
+				"x_0"
+			],
+			[
+				"x0_",
+				"x0_int"
+			],
+			[
+				"x1_",
+				"x1_int"
+			],
+			[
+				"x0",
+				"x0_int"
+			],
+			[
+				"sho",
+				"show"
+			],
+			[
+				"image",
+				"image_array"
+			],
+			[
+				"eta",
+				"eta_opt"
+			],
+			[
+				"cost",
+				"costs"
+			],
+			[
+				"tr",
+				"training"
+			],
+			[
+				"ba",
+				"batchsize"
+			],
+			[
+				"b",
+				"batches"
+			],
+			[
+				"y_",
+				"y_layer"
+			],
+			[
+				"wh",
+				"Weights"
+			],
+			[
+				"L",
+				"LayerSizes"
+			],
+			[
+				"train",
+				"train_net"
+			],
+			[
+				"set",
+				"set_up_neural_network"
+			],
+			[
+				"y_ou",
+				"y_out_result"
+			],
+			[
+				"marke",
+				"markers"
+			],
+			[
+				"col",
+				"colors"
+			],
+			[
+				"fi",
+				"fit_dict"
+			],
+			[
+				"file",
+				"file_exists"
+			],
+			[
+				"erro",
+				"error_file_name"
+			],
+			[
+				"er",
+				"error_file"
+			],
+			[
+				"list",
+				"list_img_files"
+			],
+			[
+				"mese",
+				"meses_dict"
+			],
+			[
+				"Colima",
+				"Collimator"
+			],
+			[
+				"field",
+				"filed_image_list"
+			],
+			[
+				"gantry",
+				"gantry_angle"
+			],
+			[
+				"max",
+				"max_num"
+			],
+			[
+				"path",
+				"path_to_jpg_file"
+			],
+			[
+				"roo",
+				"root_mesa"
+			],
+			[
+				"e",
+				"elif"
+			],
+			[
+				"mes",
+				"mesa_ang_list"
+			],
+			[
+				"mesa",
+				"mesa_ang_lista"
+			],
+			[
+				"ang",
+				"ang_list"
+			],
+			[
+				"root",
+				"root_mesa"
+			],
+			[
+				"axis",
+				"axis"
+			],
+			[
+				"j",
+				"jpg_file"
+			],
+			[
+				"con",
+				"ConvertToDicom"
+			],
+			[
+				"x_res_",
+				"x_res_str"
+			],
+			[
+				"x_res",
+				"x_res_entry"
+			],
+			[
+				"nome",
+				"nome_tiff"
+			],
+			[
+				"ti",
+				"tiff_meta_dict"
+			],
+			[
+				"J",
+				"jump"
+			],
+			[
+				"line",
+				"linear"
+			],
+			[
+				"swa",
+				"swapped_weights"
+			],
+			[
+				"csv",
+				"csvfile"
+			],
+			[
+				"o",
+				"opt"
+			],
+			[
+				"l",
+				"list_bool"
+			],
+			[
+				"conver",
+				"converte_imagens"
+			],
+			[
+				"conv",
+				"convert_dcm"
+			],
+			[
+				"y_o",
+				"y_out_expected"
+			],
+			[
+				"dcm",
+				"dcm_file"
+			],
+			[
+				"tex",
+				"text_file_erro"
+			],
+			[
+				"lis",
+				"list_load_error"
+			],
+			[
+				"te",
+				"text_file_erro"
+			],
+			[
+				"dc",
+				"dcm_file"
+			],
+			[
+				"pla",
+				"plan_name"
+			],
+			[
+				"leaf",
+				"leaf"
+			],
+			[
+				"leaf_",
+				"leaf_pos_temp"
+			],
+			[
+				"leafpos",
+				"leaf_pos_temp"
+			],
+			[
+				"lea",
+				"leaf_pos"
+			],
+			[
+				"le",
+				"leaf_pos"
+			],
+			[
+				"temp",
+				"temp_dict"
+			],
+			[
+				"f_",
+				"f_name"
+			],
+			[
+				"op",
+				"opt_dose"
+			],
+			[
+				"Interpol",
+				"Interpolada"
+			],
+			[
+				"sort",
+				"sorted_file_list"
+			],
+			[
+				"sor",
+				"sort_files"
+			],
+			[
+				"fil",
+				"file_list"
+			],
+			[
+				"list_",
+				"list_date"
+			],
+			[
+				"str",
+				"strptime"
+			],
+			[
+				"data",
+				"datatime"
+			],
+			[
+				"dose",
+				"dose_file"
+			],
+			[
+				"dos",
+				"dose_file"
+			],
+			[
+				"li",
+				"list_dose"
+			],
+			[
+				"m",
+				"m_counts"
+			],
+			[
+				"do",
+				"dose_counts"
+			],
+			[
+				"cont",
+				"cont"
+			],
+			[
+				"ou",
+				"output_line"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"idx",
+				"idx_mlc-1"
+			],
+			[
+				"lista",
+				"lista_linha"
+			],
+			[
+				"id",
+				"idx_mlc"
+			],
+			[
+				"err",
+				"erro_esperado"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"text",
+				"text_lin_abs"
+			],
+			[
+				"notas",
+				"notas2"
+			],
+			[
+				"nota",
+				"notas2"
+			],
+			[
+				"nat",
+				"notas2"
+			],
+			[
+				"no",
+				"notas"
+			],
+			[
+				"lin",
+				"lin_value"
+			],
+			[
+				"dis",
+				"dist2cax"
+			],
+			[
+				"norm",
+				"norm_fit"
+			],
+			[
+				"nom",
+				"nome"
+			],
+			[
+				"pi",
+				"pickets"
+			],
+			[
+				"img",
+				"img_mu"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/W/GitHub Projects/Django Projects/RTPlanChecker",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker"
+	],
+	"file_history":
+	[
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/views.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/navbar.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/login.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/urls.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/signup.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/change_password.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/password_change_form.html",
+		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/contrib/auth/urls.py",
+		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/contrib/auth/views.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/password_change_form2.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/password_change_done.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/settings.py",
+		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/contrib/auth/__init__.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/home.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/login.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/views.py",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/add_venue.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/forms.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/base.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/urls.py",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/navbar.html",
+		"/W/GitHub Projects/Django Projects/bootstrap-5.0.0-beta3-examples/sidebars/index.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/home.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/urls.py",
+		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/core/views.py",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/myclub_website/urls.py",
+		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/core/urls.py",
+		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/urls.py",
+		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/settings.py",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/myclub_website/settings.py",
+		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/templates/base.html",
+		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/templates/home.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/update_event.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/update_venue.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/venue.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/events_list.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/hello.py",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/models.py",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/add_event.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/show_venue.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/base.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/search_venues.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/show_venues.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/search_venue.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/admin.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula 02/Aula_02.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula 02/02_MachineLearning_Backpropagation.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula 02/teste.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula 01/Aula_01_Visualize_multi-layer_network_result.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula 01/01_MachineLearning_Basics_NeuralNetworksPython.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula_01_Homework1_XOR_function_1hidden_layer.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula_01_Visualize_network_result.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula_01_Homework1_XOR_function_2hidden_layers.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/Aula_01_Homework1.py",
+		"/C/Users/willi/OneDrive/Machine Learning/Curso - Machine Learning for Physicists 2019/2019_MachineLearningForPhysicists/01_MachineLearning_Basics.ipynb",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/events_list.html",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/login_senha_myclub_website.txt",
+		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/home.html",
+		"/W/GitHub Projects/Machine Learning/hello.py",
+		"/C/Users/willi/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/willi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/01_tutorial_CurveFittingnotebook.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/01_tutorial_NetworkVisualization.py",
+		"/W/Machine Learning/Machine Learning for Physicists 2021/01_MachineLearning_Basics_NeuralNetworksPython.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/interface_picket_fence.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/teste_ler_dicom.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/teste_dicom.py",
+		"/W/Guitarra/Learn - Practice - Play/login",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Picket Fence executavel/h.txt",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/interface_picket_fence.spec",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/interface_picket_fence.spec",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/__pycache__/interface_picket_fence.cpython-38.pyc",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/hook-skimage.feature.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/README.rst",
+		"/W/GitHub Projects/Trabalhando com Git-Hub.txt",
+		"/W/IRPF/2020-2021/apartamento.csv",
+		"/W/IRPF/2020-2021/apartamento",
+		"/W/ICESP - 2020/ArcCHECK/Campo referência 10x10 (Todos os ALs)/AL05/Historico_de_Dose.dat",
+		"/W/ICESP - 2020/ArcCHECK/read_txt.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/test_wl_colimador.py",
+		"/W/ICESP - 2020/ArcCHECK/Campo referência 10x10 (Todos os ALs)/AL05/CPO10x10_200MU.txt",
+		"/W/ICESP - 2020/ArcCHECK/Campo referência 10x10 (Todos os ALs)/AL04/Historico_de_Dose.dat",
+		"/W/ICESP - 2020/ArcCHECK/Historico_de_Dose.dat",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/test_wl_iosp_dezembro2020.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL_IOSP_20201216/Analises/plot_hist_WL.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL_IOSP_20201216/Analises/Historico_WL.dat",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL_IOSP_20201216/Analises/teste.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/Analises/plot_hist_WL.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/test_wl_iosp.py",
+		"/C/Users/willi/Documents/RitMix/startkit.txt",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL_IOSP/Analises/Historico_WL.dat",
+		"/C/Users/willi/OneDrive/Física/Perimeter Scholars International/Lectures Link.txt",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/Analises/Historico_WL.dat",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/test_wl.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/pylinac_dev/winston_lutz.py",
+		"/W/ICESP - 2020/RT Plan DICOM/teste_dicom.py",
+		"/C/Users/willi/OneDrive/Física/Links diversos.txt",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/pylinac_dev/picketfence.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/WL_2019-08-07_analisado/WL_dcm/teste_dicom.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_03/03_tutorial_NetworkTrainingKeras.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_03/play_around.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/test_wl1.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/test_wl2.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL2/Analises/Historico_WL.dat",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/ConvertToDicom.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_03/03_MultiLayer_ImageCompression.ipynb",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/train_net_for_2d_function_lecture03.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/teste.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/play_around.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Antigos/train_net_for_2d_function_lecture03.py",
+		"/W/GitHub Projects/Machine Learning/teste.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_01/very_simple_neural_network_lecture01.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/very_simple_neural_network_lecture02.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/very_simple_neural_network_lecture01.py",
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_01/01_tutorial_NetworkVisualization.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/images/read_dist2cax_data.py",
+		"/W/GitHub Projects/C-Sharp/first_program.cs",
+		"/C/Program Files/Git/mingw64/lib/tcl8.6/history.tcl",
+		"/C/Program Files/Git/mingw64/share/doc/xz/history.txt",
+		"/C/Program Files/Git/etc/hosts",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/setup.cfg",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/pylinac_dev/core/image.py",
+		"/W/ICESP - 2020/RT Plan DICOM/RTP/teste_rtp.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/rename_WL.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/Historico_WL.dat",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/pylinac_dev/core/mask.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/convert_test_images.py",
+		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/rename.py"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"as_v",
+			"{% if  user.is_authenticated %}",
+			"testsa",
+			"test",
+			"1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 209.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 262.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "RTPlanChecker_project.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 193.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

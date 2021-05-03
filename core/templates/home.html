@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <center>
+        <h1>RTPlanChecker</h1>
+        <br/><br/>
+    </center>
+    {% if  user.is_authenticated %}
+        Bem-vindo, {{ user.username }}
+    {% endif %}
+
+{% endblock %}
