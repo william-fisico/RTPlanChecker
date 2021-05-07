@@ -33,7 +33,6 @@ def change_password(request):
             changed = True
             user = form.save()
             update_session_auth_hash(request, user)  # Important!
-        else:
     else:
         form = PasswordChangeForm(request.user)
     return render(request, 'registration/change_password.html', {
