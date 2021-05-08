@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"wi",
+				"whitenoise"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"fomr",
+				"forms"
+			],
+			[
+				"Use",
+				"UserChangeForm"
+			],
+			[
 				"T",
 				"TEMPLATES"
 			],
@@ -494,31 +514,20 @@
 			[
 				"lin",
 				"lin_value"
-			],
-			[
-				"dis",
-				"dist2cax"
-			],
-			[
-				"norm",
-				"norm_fit"
-			],
-			[
-				"nom",
-				"nome"
-			],
-			[
-				"pi",
-				"pickets"
-			],
-			[
-				"img",
-				"img_mu"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "RTPlanChecker/settings.py",
+			"settings":
+			{
+				"buffer_size": 3659,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -569,14 +578,31 @@
 	"expanded_folders":
 	[
 		"/W/GitHub Projects/Django Projects/RTPlanChecker",
-		"/W/GitHub Projects/Django Projects/RTPlanChecker/core",
-		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates",
-		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration",
-		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker"
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/__pycache__",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/static"
 	],
 	"file_history":
 	[
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/Procfile",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/views.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/forms.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/templates/authenticate/navbar.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/templates/authenticate/edit_profile.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/templates/authenticate/change_password.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/urls.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/templates/authenticate/login.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/static/__init__.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/.env",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/.gitignore",
+		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/contrib/auth/forms.py",
+		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/forms/forms.py",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/views.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/models.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/templates/authenticate/home.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/authenticate/templates/authenticate/base.html",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/settings.py",
+		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/urls.py",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/navbar.html",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/login.html",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/urls.py",
@@ -587,7 +613,6 @@
 		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/contrib/auth/views.py",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/password_change_form2.html",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/registration/password_change_done.html",
-		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/settings.py",
 		"/W/GitHub Projects/Django Projects/virtual/Lib/site-packages/django/contrib/auth/__init__.py",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/home.html",
 		"/W/GitHub Projects/Django Projects/RTPlanChecker/core/templates/login.html",
@@ -599,7 +624,6 @@
 		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/navbar.html",
 		"/W/GitHub Projects/Django Projects/bootstrap-5.0.0-beta3-examples/sidebars/index.html",
 		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/events/templates/events/home.html",
-		"/W/GitHub Projects/Django Projects/RTPlanChecker/RTPlanChecker/urls.py",
 		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/core/views.py",
 		"/W/GitHub Projects/Django Projects/First Django Project/myapp/myclub_website/myclub_website/urls.py",
 		"/W/GitHub Projects/Django Projects/Verificacao de Planos RDT/verificacao_planos_rdt/core/urls.py",
@@ -687,23 +711,7 @@
 		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/play_around.py",
 		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Antigos/train_net_for_2d_function_lecture03.py",
 		"/W/GitHub Projects/Machine Learning/teste.py",
-		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_01/very_simple_neural_network_lecture01.py",
-		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/very_simple_neural_network_lecture02.py",
-		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_02/very_simple_neural_network_lecture01.py",
-		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_01/01_tutorial_NetworkVisualization.py",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/images/read_dist2cax_data.py",
-		"/W/GitHub Projects/C-Sharp/first_program.cs",
-		"/C/Program Files/Git/mingw64/lib/tcl8.6/history.tcl",
-		"/C/Program Files/Git/mingw64/share/doc/xz/history.txt",
-		"/C/Program Files/Git/etc/hosts",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/Outros/setup.cfg",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/pylinac_dev/core/image.py",
-		"/W/ICESP - 2020/RT Plan DICOM/RTP/teste_rtp.py",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/rename_WL.py",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/Historico_WL.dat",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/pylinac_dev/core/mask.py",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/convert_test_images.py",
-		"/W/GitHub Projects/QA-Routine-pylinac-based/WL/rename.py"
+		"/W/GitHub Projects/Machine Learning/Curso - Machine Learning for Physicists 2020/Lecture_01/very_simple_neural_network_lecture01.py"
 	],
 	"find":
 	{
@@ -721,6 +729,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"passw",
+			"Your password must contain at least 8 characters.",
+			"passwordi",
+			"authenticat",
 			"as_v",
 			"{% if  user.is_authenticated %}",
 			"testsa",
@@ -743,8 +755,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "RTPlanChecker/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 151.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

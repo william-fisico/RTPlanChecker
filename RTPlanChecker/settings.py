@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'authenticate'
+    'authenticate',
+    'plan_consistency',
 ]
 
 MIDDLEWARE = [
@@ -83,10 +84,17 @@ WSGI_APPLICATION = 'RTPlanChecker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
     }
 }
+
+
+# A URL utilizada em DATABASES['default'] = dj_database_url.config() muda a cada 24h, para continuar com a conexão entre
+# o banco de dados local e o banco na nuvem é necessário atualizar a URL
+DATABASES['default'] = dj_database_url.config(default='postgres://txkbxoluudlfkq:dcb5b0bd69cf3c27b1b33c18352e8b41c2b3e5d5ad41a435d22c44bbb2a6131d@ec2-3-234-85-177.compute-1.amazonaws.com:5432/d3g0bme15qg4io')
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
