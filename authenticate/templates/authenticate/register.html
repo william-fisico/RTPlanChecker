@@ -1,8 +1,8 @@
-{% extends 'authenticate/base.html' %}
+{% extends 'base/base.html' %}
 
 {% block content %}
 
-    <h2 class="text-center">Editar Perfil</h2>
+    <h2 class="text-center">Registrar usuário</h2>
     <div class='col-md6 offset-md-3' action="{% url 'register' %}">
         <form method="POST">
             {% csrf_token %}
