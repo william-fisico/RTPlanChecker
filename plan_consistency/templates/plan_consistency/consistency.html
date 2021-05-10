@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <center>
+        <h1>Consistência</h1>
+        <br/><br/>
+    </center>
+    {% if  user.is_authenticated %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="document">
+            <input type="submit" value="Carregar" class="btn btn-primary">
+        </form>
+        {% if file_url %}
+            <p>Arquivo: <a href="{{ file_url }}">{{ file_url }}</a></p>
+        {% endif %}
+    {% else %}
+        Fazer login
+    {% endif %}
+
+{% endblock %}

@@ -151,3 +151,8 @@ LOGOUT_REDIRECT_URL = 'home'
 
 
 django_heroku.settings(locals())
+
+
+MEDIA_ROOT = BASE_DIR / 'files'
+
+MEDIA_URL = '/files/'

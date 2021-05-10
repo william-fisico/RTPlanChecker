@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('base.urls')),
     path('', include('authenticate.urls')),
     path('', include('settings.urls')),
+    path('', include('plan_consistency.urls')),
 ]
