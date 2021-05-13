@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
+from django.contrib import messages
+from django.contrib.auth.decorators import permission_required, login_required
 from .open_dcm import OpenRTPlan
 
 # Create your views here.
-
+@login_required
+@permission_required('admin.can_add_log_entry',login_url="/login_permission_error/")
 def rtplan_consistency(request):
     context = {}
     if request.method == 'POST':

@@ -76,3 +76,7 @@ def change_password(request):
 
     context = {'form':form}
     return render(request, 'authenticate/change_password.html', context)
+
+
+def login_permission_error(request):
+    return render(request, 'authenticate/login_permission.html')
