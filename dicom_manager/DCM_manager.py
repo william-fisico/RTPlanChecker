@@ -18,10 +18,13 @@ class Manager:
         #self.rx_prescription = None #lista com todas as precirções do plano
 
         modality_list = ['RTSTRUCT', 'RTDOSE', 'RTPLAN']
+        self.is_valid = False
+        self.cont = 0
         try:
             temp_dcm = pydicom.filereader.read_file(file, force=True)
             modality = temp_dcm[0x0008,0x0060].value
             if modality in modality_list:
+                self.is_valid = True
                 self.dcm_file = temp_dcm
                 self.set_dcm_info(modality)
             else:
@@ -30,8 +33,17 @@ class Manager:
         except:
             self.dcm_file = None
 
+
     def get_dcm_file(self):
-        return self.rx_prescription
+        self.cont += 1
+        if self.is_valid:
+            print(self.rx_prescription)
+            print(self.ids)
+            print(self.cont)
+            return self.rx_prescription
+        else:
+            return None
+
 
     def set_ids(self, is_rtplan = False):
         #define a identificação de paciente e plano ==> self.ids = ['patient_name','patient_id','plan_id ']
@@ -40,8 +52,10 @@ class Manager:
         else:
             self.ids = [self.dcm_file[0x0010,0x0010].value, self.dcm_file[0x0010,0x0020].value]
 
+
     def set_grid_calc(self):
         self.grid_calc = max(self.dcm_file[0x0028,0x0030])
+
 
     def set_rx_prescription(self):
 
@@ -49,11 +63,20 @@ class Manager:
         for rx in self.dcm_file[0x300a,0x0010]: #(300a, 0010) Dose Reference Sequence
             if (rx[0x300a,0x0014].value == 'SITE'): #(300a, 0012) Dose Reference Number 
                 rx_name_list[rx[0x300a,0x0012].value] = [rx[0x300a,0x0016].value, rx[0x300a,0x0026].value]
-        self.rx_prescription = rx_name_list
-
+        
         for x in self.dcm_file[0x300a,0x0070]: #loop dentro do grupo de parametros de cada prescricao
-            print('====')
-            print(x[0x300c,0x0050][0])
+            for y in x[0x300c,0x0050]: #encontra a prescricao de referencia
+                rx_name_list[y[0x300c,0x0051].value].append(x[0x300a,0x0078].value) # adiciona numero de frações ao rx_name_list['Rx-i reference nunber']
+                daily_dose = float(rx_name_list[y[0x300c,0x0051].value][1])/float(x[0x300a,0x0078].value)
+                rx_name_list[y[0x300c,0x0051].value].append(daily_dose) # adiciona dose diaria ao rx_name_list['Rx-i reference nunber']
+
+        ### Adicionar campos de tratamento
+
+        self.rx_prescription = rx_name_list
+                
+
+
+
 
     def set_dcm_info(self, modality):
         if modality == 'RTPLAN':
