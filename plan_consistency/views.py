@@ -12,8 +12,11 @@ def rtplan_consistency(request):
     if request.method == 'POST':
         x = Manager(request.FILES['rtplan_dcm'])
         temp = x.get_dcm_file()
+        texto = []
         if temp is not None:
-            context = {'output_text':temp}
+            for k in temp:
+                texto.append(temp[k])
+            context = {'output_text':texto}
         else:
             context = {'output_text':'Falhou'}
 

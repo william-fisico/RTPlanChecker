@@ -37,9 +37,6 @@ class Manager:
     def get_dcm_file(self):
         self.cont += 1
         if self.is_valid:
-            print(self.rx_prescription)
-            print(self.ids)
-            print(self.cont)
             return self.rx_prescription
         else:
             return None
