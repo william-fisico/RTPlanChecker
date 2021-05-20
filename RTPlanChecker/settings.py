@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'authenticate',
     'plan_consistency',
     'settings',
+    'dicom_manager',
 ]
 
 MIDDLEWARE = [
