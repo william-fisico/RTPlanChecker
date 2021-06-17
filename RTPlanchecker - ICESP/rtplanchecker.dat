@@ -1,0 +1,179 @@
+Nome: TG119MONACO2019
+ID: TG119
+Nome do plano: TESTEIMRT
+===================
+Nome da prescrição: AStep and Shoot
+	Dose Total (cGy): 70.00
+	Número de Frações: 35
+	Dose Diária (cGy): 2.0
+	--> ID do campo: 1
+			Nome do campo: POST
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.297
+			MU: 103.114891
+	--> ID do campo: 2
+			Nome do campo: OLE
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.390
+			MU: 109.468697
+	--> ID do campo: 3
+			Nome do campo: OAE
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.484
+			MU: 86.142876
+	--> ID do campo: 4
+			Nome do campo: OAD
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.477
+			MU: 72.306198
+	--> ID do campo: 5
+			Nome do campo: OLD
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.378
+			MU: 90.816360
+===================
+Nome da prescrição: BSliding Window
+	Dose Total (cGy): 70.00
+	Número de Frações: 35
+	Dose Diária (cGy): 2.0
+	--> ID do campo: 6
+			Nome do campo: POST
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: DYNAMIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.381
+			MU: 131.997559
+	--> ID do campo: 7
+			Nome do campo: OLE
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: DYNAMIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.342
+			MU: 124.702179
+	--> ID do campo: 8
+			Nome do campo: OAE
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: DYNAMIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.510
+			MU: 99.418060
+	--> ID do campo: 9
+			Nome do campo: OAD
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: DYNAMIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.491
+			MU: 84.732513
+	--> ID do campo: 10
+			Nome do campo: OLD
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: DYNAMIC
+			AL: 05Elekta
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			Isocentro: [-1.5, -1.5, -10.0]
+			Orientação do paciente: FFS
+			DRP: [-1.5, -1.5, -10.0]
+			Dose no DRP (Gy): 0.366
+			MU: 129.401352
+===================
+Nome da prescrição: CSSD
+	Dose Total (cGy): 30.00
+	Número de Frações: 10
+	Dose Diária (cGy): 3.0
+	--> ID do campo: 11
+			Nome do campo: ANT SSD
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 03Elekta
+			Tipo de feixe: PHOTON
+			Energia: 15.0
+			Isocentro: [-0.9, -176.7, -11.3]
+			Orientação do paciente: FFS
+			DRP: [-0.9, -1.5, -11.3]
+			Dose no DRP (Gy): 1.667
+			MU: 641.702454
+	--> ID do campo: 11
+			Nome do campo: POST SSD
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 01Elekta3D
+			Tipo de feixe: PHOTON
+			Energia: 4.0
+			Isocentro: [-0.9, 74.8, -11.3]
+			Orientação do paciente: FFS
+			DRP: [-0.9, -1.5, -11.3]
+			Dose no DRP (Gy): 1.667
+			MU: 243.261963
+===================
+Nome da prescrição: Deletrons
+	Dose Total (cGy): 8.01
+	Número de Frações: 3
+	Dose Diária (cGy): 2.67
+	--> ID do campo: 13
+			Nome do campo: BOOST
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			AL: 02Elekta
+			Tipo de feixe: ELECTRON
+			Energia: 12.0
+			Isocentro: [-31.6, -77.0, -12.5]
+			Orientação do paciente: FFS
+			DRP: [-31.6, -77.0, -12.5]
+			Dose no DRP (Gy): 2.176
+			MU: 292.531860

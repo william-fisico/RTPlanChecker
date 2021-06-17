@@ -1,0 +1,633 @@
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0012) Instance Creation Date              DA: '20210323'
+(0008, 0013) Instance Creation Time              TM: '153640'
+(0008, 0014) Instance Creator UID                UI: 2.16.840.1.114337
+(0008, 0016) SOP Class UID                       UI: RT Plan Storage
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.114337.1.1.1616524600.0
+(0008, 0020) Study Date                          DA: '20210319'
+(0008, 0030) Study Time                          TM: '182518'
+(0008, 0050) Accession Number                    SH: '0371555601'
+(0008, 0060) Modality                            CS: 'RTPLAN'
+(0008, 0070) Manufacturer                        LO: 'CMS, Inc.'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 1070) Operators' Name                     PN: ''
+(0008, 1090) Manufacturer's Model Name           LO: 'Monaco'
+(0010, 0010) Patient's Name                      PN: 'ALESSANDRA M DA SILVA'
+(0010, 0020) Patient ID                          LO: '11146704'
+(0010, 0030) Patient's Birth Date                DA: '19760507'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1000) Other Patient IDs                   LO: '11146704'
+(0010, 1001) Other Patient Names                 PN: 'ALESSANDRA M DA SILVA'
+(0020, 000d) Study Instance UID                  UI: 1.2.840.113704.1.111.5760.1616189118.1
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.114337.1616524600
+(0020, 0010) Study ID                            SH: '50541'
+(0020, 0011) Series Number                       IS: "1"
+(0020, 0013) Instance Number                     IS: "1"
+(300a, 0002) RT Plan Label                       SH: 'MAMAESQ'
+(300a, 0003) RT Plan Name                        LO: 'MAMAESQ'
+(300a, 0004) RT Plan Description                 ST: ''
+(300a, 0006) RT Plan Date                        DA: '20210322'
+(300a, 0007) RT Plan Time                        TM: '145710.000000'
+(300a, 000c) RT Plan Geometry                    CS: 'PATIENT'
+(300a, 000e) Prescription Description            ST: 'Composite Plan: RxA, RxB'
+(300a, 0010)  Dose Reference Sequence  4 item(s) ---- 
+   (300a, 0012) Dose Reference Number               IS: "1"
+   (300a, 0014) Dose Reference Structure Type       CS: 'SITE'
+   (300a, 0016) Dose Reference Description          LO: 'AMamaEsquerda'
+   (300a, 0020) Dose Reference Type                 CS: 'TARGET'
+   (300a, 0026) Target Prescription Dose            DS: "40.05"
+   ---------
+   (300a, 0012) Dose Reference Number               IS: "2"
+   (300a, 0014) Dose Reference Structure Type       CS: 'SITE'
+   (300a, 0016) Dose Reference Description          LO: 'BFSCESQ'
+   (300a, 0020) Dose Reference Type                 CS: 'TARGET'
+   (300a, 0026) Target Prescription Dose            DS: "40.05"
+   ---------
+   (300a, 0012) Dose Reference Number               IS: "3"
+   (300a, 0014) Dose Reference Structure Type       CS: 'COORDINATES'
+   (300a, 0018) Dose Reference Point Coordinates    DS: [91.6, -37.8, 0.0]
+   (300a, 0020) Dose Reference Type                 CS: 'TARGET'
+   ---------
+   (300a, 0012) Dose Reference Number               IS: "4"
+   (300a, 0014) Dose Reference Structure Type       CS: 'COORDINATES'
+   (300a, 0018) Dose Reference Point Coordinates    DS: [82.1, -5.5, 140.0]
+   (300a, 0020) Dose Reference Type                 CS: 'TARGET'
+   ---------
+(300a, 0070)  Fraction Group Sequence  2 item(s) ---- 
+   (300a, 0071) Fraction Group Number               IS: "1"
+   (300a, 0078) Number of Fractions Planned         IS: "15"
+   (300a, 0080) Number of Beams                     IS: "2"
+   (300a, 00a0) Number of Brachy Application Setups IS: "0"
+   (300c, 0004)  Referenced Beam Sequence  2 item(s) ---- 
+      (300a, 0082) Beam Dose Specification Point       DS: [91.6, -37.8, 0.0]
+      (300a, 0084) Beam Dose                           DS: "1.444"
+      (300a, 0086) Beam Meterset                       DS: "162.056946"
+      (300c, 0006) Referenced Beam Number              IS: "1"
+      ---------
+      (300a, 0082) Beam Dose Specification Point       DS: [91.6, -37.8, 0.0]
+      (300a, 0084) Beam Dose                           DS: "1.281"
+      (300a, 0086) Beam Meterset                       DS: "145.763657"
+      (300c, 0006) Referenced Beam Number              IS: "2"
+      ---------
+   (300c, 0050)  Referenced Dose Reference Sequence  1 item(s) ---- 
+      (300c, 0051) Referenced Dose Reference Number    IS: "1"
+      ---------
+   ---------
+   (300a, 0071) Fraction Group Number               IS: "2"
+   (300a, 0078) Number of Fractions Planned         IS: "15"
+   (300a, 0080) Number of Beams                     IS: "1"
+   (300a, 00a0) Number of Brachy Application Setups IS: "0"
+   (300c, 0004)  Referenced Beam Sequence  1 item(s) ---- 
+      (300a, 0082) Beam Dose Specification Point       DS: [82.1, -5.5, 140.0]
+      (300a, 0084) Beam Dose                           DS: "2.724"
+      (300a, 0086) Beam Meterset                       DS: "293.995605"
+      (300c, 0006) Referenced Beam Number              IS: "3"
+      ---------
+   (300c, 0050)  Referenced Dose Reference Sequence  1 item(s) ---- 
+      (300c, 0051) Referenced Dose Reference Number    IS: "2"
+      ---------
+   ---------
+(300a, 00b0)  Beam Sequence  3 item(s) ---- 
+   (0008, 1040) Institutional Department Name       LO: '1~ICESP'
+   (3002, 0050)  Primary Fluence Mode Sequence  1 item(s) ---- 
+      (3002, 0051) Fluence Mode                        CS: 'STANDARD'
+      ---------
+   (300a, 00b2) Treatment Machine Name              SH: '01Elekta'
+   (300a, 00b3) Primary Dosimeter Unit              CS: 'MU'
+   (300a, 00b4) Source-Axis Distance                DS: "1000.0"
+   (300a, 00b6)  Beam Limiting Device Sequence  3 item(s) ---- 
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "426.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "1"
+      ---------
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "509.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "1"
+      ---------
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "377.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "40"
+      (300a, 00be) Leaf Position Boundaries            DS: Array of 41 elements
+      ---------
+   (300a, 00c0) Beam Number                         IS: "1"
+   (300a, 00c2) Beam Name                           LO: '1'
+   (300a, 00c3) Beam Description                    ST: 'INT'
+   (300a, 00c4) Beam Type                           CS: 'STATIC'
+   (300a, 00c6) Radiation Type                      CS: 'PHOTON'
+   (300a, 00ce) Treatment Delivery Type             CS: 'TREATMENT'
+   (300a, 00d0) Number of Wedges                    IS: "0"
+   (300a, 00e0) Number of Compensators              IS: "0"
+   (300a, 00ed) Number of Boli                      IS: "0"
+   (300a, 00f0) Number of Blocks                    IS: "0"
+   (300a, 010e) Final Cumulative Meterset Weight    DS: "1.0"
+   (300a, 0110) Number of Control Points            IS: "6"
+   (300a, 0111)  Control Point Sequence  6 item(s) ---- 
+      (300a, 0112) Control Point Index                 IS: "0"
+      (300a, 0114) Nominal Beam Energy                 DS: "6.0"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-44.0, 70.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 011e) Gantry Angle                        DS: "308.0"
+      (300a, 011f) Gantry Rotation Direction           CS: 'NONE'
+      (300a, 0120) Beam Limiting Device Angle          DS: "5.0"
+      (300a, 0121) Beam Limiting Device Rotation Direc CS: 'NONE'
+      (300a, 0122) Patient Support Angle               DS: "8.0"
+      (300a, 0123) Patient Support Rotation Direction  CS: 'NONE'
+      (300a, 0125) Table Top Eccentric Angle           DS: "0.0"
+      (300a, 0126) Table Top Eccentric Rotation Direct CS: 'NONE'
+      (300a, 0128) Table Top Vertical Position         DS: None
+      (300a, 0129) Table Top Longitudinal Position     DS: None
+      (300a, 012a) Table Top Lateral Position          DS: None
+      (300a, 012c) Isocenter Position                  DS: [91.6, -37.8, 0.0]
+      (300a, 012e) Surface Entry Point                 DS: [43.4, -75.9, 6.8]
+      (300a, 0130) Source to Surface Distance          DS: "938.2"
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.0"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 60.900001525878906
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 63.79999923706055
+         (300a, 008a) Beam Dose Point SSD                 FL: 939.0999755859375
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "1"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-44.0, 70.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 011e) Gantry Angle                        DS: "308.0"
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.87"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 60.900001525878906
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 63.79999923706055
+         (300a, 008a) Beam Dose Point SSD                 FL: 939.0999755859375
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "2"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-45.0, 25.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.87"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 60.900001525878906
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 63.79999923706055
+         (300a, 008a) Beam Dose Point SSD                 FL: 939.0999755859375
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "3"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-45.0, 25.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.93"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 60.900001525878906
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 63.79999923706055
+         (300a, 008a) Beam Dose Point SSD                 FL: 939.0999755859375
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "4"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-45.0, 70.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.93"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 60.900001525878906
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 63.79999923706055
+         (300a, 008a) Beam Dose Point SSD                 FL: 939.0999755859375
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "5"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-45.0, 70.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "1.0"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 60.900001525878906
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 63.79999923706055
+         (300a, 008a) Beam Dose Point SSD                 FL: 939.0999755859375
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+   (300c, 006a) Referenced Patient Setup Number     IS: "1"
+   ---------
+   (0008, 1040) Institutional Department Name       LO: '1~ICESP'
+   (3002, 0050)  Primary Fluence Mode Sequence  1 item(s) ---- 
+      (3002, 0051) Fluence Mode                        CS: 'STANDARD'
+      ---------
+   (300a, 00b2) Treatment Machine Name              SH: '01Elekta'
+   (300a, 00b3) Primary Dosimeter Unit              CS: 'MU'
+   (300a, 00b4) Source-Axis Distance                DS: "1000.0"
+   (300a, 00b6)  Beam Limiting Device Sequence  3 item(s) ---- 
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "426.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "1"
+      ---------
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "509.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "1"
+      ---------
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "377.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "40"
+      (300a, 00be) Leaf Position Boundaries            DS: Array of 41 elements
+      ---------
+   (300a, 00c0) Beam Number                         IS: "2"
+   (300a, 00c2) Beam Name                           LO: '2'
+   (300a, 00c3) Beam Description                    ST: 'EXT'
+   (300a, 00c4) Beam Type                           CS: 'STATIC'
+   (300a, 00c6) Radiation Type                      CS: 'PHOTON'
+   (300a, 00ce) Treatment Delivery Type             CS: 'TREATMENT'
+   (300a, 00d0) Number of Wedges                    IS: "0"
+   (300a, 00e0) Number of Compensators              IS: "0"
+   (300a, 00ed) Number of Boli                      IS: "0"
+   (300a, 00f0) Number of Blocks                    IS: "0"
+   (300a, 010e) Final Cumulative Meterset Weight    DS: "1.0"
+   (300a, 0110) Number of Control Points            IS: "8"
+   (300a, 0111)  Control Point Sequence  8 item(s) ---- 
+      (300a, 0112) Control Point Index                 IS: "0"
+      (300a, 0114) Nominal Beam Energy                 DS: "6.0"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-70.0, 45.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 011e) Gantry Angle                        DS: "132.0"
+      (300a, 011f) Gantry Rotation Direction           CS: 'NONE'
+      (300a, 0120) Beam Limiting Device Angle          DS: "6.3"
+      (300a, 0121) Beam Limiting Device Rotation Direc CS: 'NONE'
+      (300a, 0122) Patient Support Angle               DS: "351.0"
+      (300a, 0123) Patient Support Rotation Direction  CS: 'NONE'
+      (300a, 0125) Table Top Eccentric Angle           DS: "0.0"
+      (300a, 0126) Table Top Eccentric Rotation Direct CS: 'NONE'
+      (300a, 0128) Table Top Vertical Position         DS: None
+      (300a, 0129) Table Top Longitudinal Position     DS: None
+      (300a, 012a) Table Top Lateral Position          DS: None
+      (300a, 012c) Isocenter Position                  DS: [91.6, -37.8, 0.0]
+      (300a, 012e) Surface Entry Point                 DS: [139.5, 5.9, 7.6]
+      (300a, 0130) Source to Surface Distance          DS: "934.7"
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.0"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "1"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-70.0, 45.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 011e) Gantry Angle                        DS: "132.0"
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.77"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "2"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-11.0, 44.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.77"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "3"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-11.0, 44.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.82"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "4"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-70.0, 45.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.82"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "5"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-70.0, 45.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.92"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "6"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-70.0, 45.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.92"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "7"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-70.0, 45.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-100.0, 119.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 0134) Cumulative Meterset Weight          DS: "1.0"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "1"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 65.0
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 68.30000305175781
+         (300a, 008a) Beam Dose Point SSD                 FL: 935.0
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "3"
+         ---------
+      ---------
+   (300c, 006a) Referenced Patient Setup Number     IS: "1"
+   ---------
+   (0008, 1040) Institutional Department Name       LO: '1~ICESP'
+   (3002, 0050)  Primary Fluence Mode Sequence  1 item(s) ---- 
+      (3002, 0051) Fluence Mode                        CS: 'STANDARD'
+      ---------
+   (300a, 00b2) Treatment Machine Name              SH: '01Elekta'
+   (300a, 00b3) Primary Dosimeter Unit              CS: 'MU'
+   (300a, 00b4) Source-Axis Distance                DS: "1000.0"
+   (300a, 00b6)  Beam Limiting Device Sequence  3 item(s) ---- 
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "426.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "1"
+      ---------
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "509.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "1"
+      ---------
+      (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+      (300a, 00ba) Source to Beam Limiting Device Dist DS: "377.0"
+      (300a, 00bc) Number of Leaf/Jaw Pairs            IS: "40"
+      (300a, 00be) Leaf Position Boundaries            DS: Array of 41 elements
+      ---------
+   (300a, 00c0) Beam Number                         IS: "3"
+   (300a, 00c2) Beam Name                           LO: '3'
+   (300a, 00c3) Beam Description                    ST: 'FSCA'
+   (300a, 00c4) Beam Type                           CS: 'STATIC'
+   (300a, 00c6) Radiation Type                      CS: 'PHOTON'
+   (300a, 00ce) Treatment Delivery Type             CS: 'TREATMENT'
+   (300a, 00d0) Number of Wedges                    IS: "0"
+   (300a, 00e0) Number of Compensators              IS: "0"
+   (300a, 00ed) Number of Boli                      IS: "0"
+   (300a, 00f0) Number of Blocks                    IS: "0"
+   (300a, 010e) Final Cumulative Meterset Weight    DS: "1.0"
+   (300a, 0110) Number of Control Points            IS: "2"
+   (300a, 0111)  Control Point Sequence  2 item(s) ---- 
+      (300a, 0112) Control Point Index                 IS: "0"
+      (300a, 0114) Nominal Beam Energy                 DS: "6.0"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011a)  Beam Limiting Device Position Sequence  3 item(s) ---- 
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [-47.0, 72.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'ASYMY'
+         (300a, 011c) Leaf/Jaw Positions                  DS: [0.0, 81.0]
+         ---------
+         (300a, 00b8) RT Beam Limiting Device Type        CS: 'MLCX'
+         (300a, 011c) Leaf/Jaw Positions                  DS: Array of 80 elements
+         ---------
+      (300a, 011e) Gantry Angle                        DS: "350.0"
+      (300a, 011f) Gantry Rotation Direction           CS: 'NONE'
+      (300a, 0120) Beam Limiting Device Angle          DS: "0.0"
+      (300a, 0121) Beam Limiting Device Rotation Direc CS: 'NONE'
+      (300a, 0122) Patient Support Angle               DS: "0.0"
+      (300a, 0123) Patient Support Rotation Direction  CS: 'NONE'
+      (300a, 0125) Table Top Eccentric Angle           DS: "0.0"
+      (300a, 0126) Table Top Eccentric Rotation Direct CS: 'NONE'
+      (300a, 0128) Table Top Vertical Position         DS: None
+      (300a, 0129) Table Top Longitudinal Position     DS: None
+      (300a, 012a) Table Top Lateral Position          DS: None
+      (300a, 012c) Isocenter Position                  DS: [41.6, -40.4, 118.5]
+      (300a, 012e) Surface Entry Point                 DS: [41.6, -40.4, 118.5]
+      (300a, 0130) Source to Surface Distance          DS: "1000.0"
+      (300a, 0134) Cumulative Meterset Weight          DS: "0.0"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "2"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 22.200000762939453
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 22.5
+         (300a, 008a) Beam Dose Point SSD                 FL: 1019.9000244140625
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "4"
+         ---------
+      ---------
+      (300a, 0112) Control Point Index                 IS: "1"
+      (300a, 0115) Dose Rate Set                       DS: "0.0"
+      (300a, 011e) Gantry Angle                        DS: "350.0"
+      (300a, 0134) Cumulative Meterset Weight          DS: "1.0"
+      (300c, 0050)  Referenced Dose Reference Sequence  2 item(s) ---- 
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "2"
+         ---------
+         (300a, 0088) Beam Dose Point Depth               FL: 22.200000762939453
+         (300a, 0089) Beam Dose Point Equivalent Depth    FL: 22.5
+         (300a, 008a) Beam Dose Point SSD                 FL: 1019.9000244140625
+         (300a, 010c) Cumulative Dose Reference Coefficie DS: None
+         (300c, 0051) Referenced Dose Reference Number    IS: "4"
+         ---------
+      ---------
+   (300c, 006a) Referenced Patient Setup Number     IS: "1"
+   ---------
+(300a, 0180)  Patient Setup Sequence  1 item(s) ---- 
+   (0018, 5100) Patient Position                    CS: 'HFS'
+   (300a, 0182) Patient Setup Number                IS: "1"
+   (300a, 01b0) Setup Technique                     CS: 'ISOCENTRIC'
+   ---------
+(300c, 0060)  Referenced Structure Set Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: RT Structure Set Storage
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.2.840.10008.5.1.4.1.1.481.3.1616524595
+   ---------
+(300e, 0002) Approval Status                     CS: 'APPROVED'
+(300e, 0004) Review Date                         DA: '20210323'
+(300e, 0005) Review Time                         TM: '104513'
+(300e, 0008) Reviewer Name                       PN: 'jpanichella'

@@ -12,9 +12,21 @@
             <p>Arquivo: <a href="{{ file_url }}">{{ file_url }}</a></p>
         {% endif %}
     -->
-        {% if output_text %}
-            {% for lin in output_text %}
-                <p>{{ lin }}</p>
+        {% if is_RTPlan %}
+            <p>Nome: {{ plan_id.0 }}</p>
+            <p>ID: {{ plan_id.1 }}</p>
+            <p>Nome do plano: {{ plan_id.2 }}</p>
+            {% for lin in rx_list %}
+                <p>----------------------</p>
+                <p>Nome da prescrição: {{ lin.0 }}</p>
+                <p>Dose Total (cGy): {{ lin.1 }}</p>
+                <p>Número de Frações: {{ lin.2 }}</p>
+                <p>Dose Diária (cGy): {{ lin.3 }}</p>
+                <p>Orientação do paciente: {{ lin.4 }}</p>
+                <p>AL: {{ lin.5 }}</p>
+                <p>Isocentro: {{ lin.6 }}</p>
+                <p>***********************</p>
+
             {% endfor %}
         {% else %}
             <form method="POST" enctype="multipart/form-data">
@@ -23,6 +35,7 @@
                 <input type="submit" value="Carregar" class="btn btn-primary">
             </form>
         {% endif %}
+
     {% else %}
         Fazer login
     {% endif %}

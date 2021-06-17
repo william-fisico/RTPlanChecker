@@ -1,0 +1,46 @@
+Nome: ALESSANDRA M DA SILVA
+ID: 11146704
+Nome do plano: MAMAESQ
+===================
+Nome da prescrição: AMamaEsquerda
+	Dose Total (cGy): 40.05
+	Número de Frações: 15
+	Dose Diária (cGy): 2.67
+	Orientação do paciente: HFS
+	Isocentro: [91.6, -37.8, 0.0]
+	AL: 01Elekta
+	--> ID do campo: 1
+			Nome do campo: INT
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			DRP: [91.6, -37.8, 0.0]
+			Dose no DRP (Gy): 1.444
+			MU: 162.056946
+	--> ID do campo: 2
+			Nome do campo: EXT
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			DRP: [91.6, -37.8, 0.0]
+			Dose no DRP (Gy): 1.281
+			MU: 145.763657
+===================
+Nome da prescrição: BFSCESQ
+	Dose Total (cGy): 40.05
+	Número de Frações: 15
+	Dose Diária (cGy): 2.67
+	Orientação do paciente: HFS
+	Isocentro: [41.6, -40.4, 118.5]
+	AL: 01Elekta
+	--> ID do campo: 3
+			Nome do campo: FSCA
+			Tipo de campo: TREATMENT
+			Técnica de tratamento: STATIC
+			Tipo de feixe: PHOTON
+			Energia: 6.0
+			DRP: [82.1, -5.5, 140.0]
+			Dose no DRP (Gy): 2.724
+			MU: 293.995605
