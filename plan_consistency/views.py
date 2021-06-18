@@ -16,29 +16,41 @@ def rtplan_consistency(request):
         temp = x.get_rtplan_info()
         rx_list = []
         if temp is not None:
+            context = {'plan_id':temp[0]}
             y = VerifyRTPlan()
             #for k in temp[-1]:
             #temp[-1[[k] = ['Rx-k name', 'Total dose Rx-k (Gy)', 'Rx-k Number of fractions', 'Rx-k Fractional Dose (Gy)', 'Rx-k Fields List']
             for k in temp[1]:
+                position_warning = False
+                iso_warning = False
+                treatment_unit_warning = False
                 y.test_rx_field(temp[1][k][4])
                 rx_temp = [temp[1][k][i] for i in range(4)]
                 if y.unique_patient_position:
                     rx_temp.append(temp[1][k][4][0][8])
                 else:
                     rx_temp.append('PLANEJAMENTO COM INCONSISTÊNCIA NA ORIENTAÇÃO DO PACIENTE')
+                    position_warning = True
                 if y.unique_treatment_unit:
                     rx_temp.append(temp[1][k][4][0][4])
                 else:
                     rx_temp.append('ANTENCAO - CAMPOS PLANEJADOS EM DIFERENTES UNIDADES DE TRATAMENTO')
+                    treatment_unit_warning = True
                 if y.unique_iso:
                     rx_temp.append(temp[1][k][4][0][7])
                 else:
                     rx_temp.append('ANTENCAO - CAMPOS PLANEJADOS EM ISOCENTROS DIFERENTES')
+                    iso_warning = True
 
+                field_info_list = [] #[field.append([position_warning, treatment_unit_warning, iso_warning]) for field in temp[1][k][4]]
+                for field in temp[1][k][4]:
+                    field.append([treatment_unit_warning, iso_warning, position_warning])
+                    field_info_list.append(field)
+                rx_temp.append(field_info_list)
                 rx_list.append(rx_temp)
 
-
-            context = {'plan_id':temp[0], 'rx_list':rx_list, 'is_RTPlan':True}
+            context['rx_list'] = rx_list
+            context['is_RTPlan'] = True
 
 
             '''for rx in rx_list:

@@ -1,6 +1,8 @@
 class VerifyRTPlan():
 
     def __init__(self):
+        self.id_list = []
+        self.unique_id = True
         pass
 
 
@@ -15,22 +17,20 @@ class VerifyRTPlan():
     
     def test_rx_field(self, rx): 
         #['Field ID', 'Field Name', 'Treatment Unit', 'Energy', 'Isocenter', 'Patient Setup', 'DRP', 'DRP Dose (cGy)', 'MU'] 
-        self.unique_id = True
         self.unique_name = True
         self.unique_iso = True
         self.unique_treatment_unit = True
         self.unique_patient_position = True
-        id_list = []
         name_list = []
         iso_list = []
         treatment_unit_list = []
         patient_position_list = []
 
         for j in rx:
-            if j[0] in id_list:
+            if j[0] in self.id_list:
                 self.unique_id = False
             else:
-                id_list.append(j[0])
+                self.id_list.append(j[0])
             
             if j[1] in name_list:
                 self.unique_name = False
