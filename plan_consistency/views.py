@@ -12,8 +12,11 @@ from .verify_parameters import VerifyRTPlan
 def rtplan_consistency(request):
     context = {}
     if request.method == 'POST':
-        x = Manager(request.FILES['rtplan_dcm'])
-        temp = x.get_rtplan_info()
+        try:
+            x = Manager(request.FILES['rtplan_dcm'])
+            temp = x.get_rtplan_info()
+        except:
+            temp = None
         rx_list = []
         if temp is not None:
             context = {'plan_id':temp[0]}
@@ -31,26 +34,33 @@ def rtplan_consistency(request):
                 else:
                     rx_temp.append('PLANEJAMENTO COM INCONSISTÊNCIA NA ORIENTAÇÃO DO PACIENTE')
                     position_warning = True
+                    messages.success(request, ('Prescrição ' + rx_temp[0] + ' possui inconsistência na orientação do paciente. Por favor verifique.'))
                 if y.unique_treatment_unit:
                     rx_temp.append(temp[1][k][4][0][4])
                 else:
                     rx_temp.append('ANTENCAO - CAMPOS PLANEJADOS EM DIFERENTES UNIDADES DE TRATAMENTO')
                     treatment_unit_warning = True
+                    messages.success(request, ('Prescrição ' + rx_temp[0] + ' possui campos planejados em diferentes unidades de tratamento. Por favor verifique.'))
                 if y.unique_iso:
                     rx_temp.append(temp[1][k][4][0][7])
                 else:
                     rx_temp.append('ANTENCAO - CAMPOS PLANEJADOS EM ISOCENTROS DIFERENTES')
                     iso_warning = True
+                    messages.success(request, ('Prescrição ' + rx_temp[0] + ' possui campos planejados em isocentros diferentes. Por favor verifique.'))
 
                 field_info_list = [] #[field.append([position_warning, treatment_unit_warning, iso_warning]) for field in temp[1][k][4]]
                 for field in temp[1][k][4]:
-                    field.append([treatment_unit_warning, iso_warning, position_warning])
+                    #field.append([treatment_unit_warning, iso_warning, position_warning])
                     field_info_list.append(field)
                 rx_temp.append(field_info_list)
+                rx_temp.append([treatment_unit_warning, iso_warning, position_warning])
                 rx_list.append(rx_temp)
 
             context['rx_list'] = rx_list
             context['is_RTPlan'] = True
+
+        else:
+            messages.success(request, ('Por favor selecione um arquivo válido.'))
 
 
             '''for rx in rx_list:

@@ -14,23 +14,35 @@
                 <h3 class="card-header"><center>Verificação da Consistência do Plano</center></h3>
                 <div class="card-body">
                     <h6 class="card-title">Paciente: {{ plan_id.0 }}<br/>ID: {{ plan_id.1 }}<br/>Nome do plano: {{ plan_id.2 }}</h6>
-                    {% for lin in rx_list %}
+                    {% for rx in rx_list %}
                         <div class="card">
-                            <h6 class="card-header">Prescrição: {{ lin.0 }}</h6>
+                            <h6 class="card-header">Prescrição: {{ rx.0 }}</h6>
                             <div class="card-body">
                                 <table class="table">
                                     <tbody>
                                         <tr>
                                             <th scope="row"></th>
-                                            <td><p class="card-text"><strong>Dose Total (cGy):</strong> {{ lin.1 }}</p></td>
-                                            <td><p class="card-text"><strong>Número de Frações:</strong> {{ lin.2 }}</p></td>
-                                            <td><p class="card-text"><strong>Dose Diária (cGy):</strong> {{ lin.3 }}</p></td>
+                                            <td><p class="card-text"><strong>Dose Total (Gy):</strong> {{ rx.1 }}</p></td>
+                                            <td><p class="card-text"><strong>Número de Frações:</strong> {{ rx.2 }}</p></td>
+                                            <td><p class="card-text"><strong>Dose Diária (Gy):</strong> {{ rx.3 }}</p></td>
                                         </tr>
                                         <tr>
                                             <th scope="row"></th>
-                                            <td><p class="card-text"><strong>Orientação do paciente:</strong> {{ lin.4 }}</p></td>
-                                            <td><p class="card-text"><strong>AL:</strong> {{ lin.5 }}</p></td>
-                                            <td><p class="card-text"><strong>Isocentro:</strong> {{ lin.6 }}</p></td>
+                                            {% if rx.8.2 is True %}
+                                                <td><p class="card-text"><strong>Orientação do paciente: <span class="text-danger">{{ rx.4 }}</span></strong></p></td>
+                                            {% else %}
+                                                <td><p class="card-text"><strong>Orientação do paciente:</strong> {{ rx.4 }}</p></td>
+                                            {% endif %}
+                                            {% if rx.8.0 is True %}
+                                                <td><p class="card-text"><strong>AL: <span class="text-danger">{{ rx.5 }}</span></strong></p></td>
+                                            {% else %}
+                                                <td><p class="card-text"><strong>AL:</strong> {{ rx.5 }}</p></td>
+                                            {% endif %}
+                                            {% if rx.8.1 is True %}
+                                                <td><p class="card-text"><strong>Isocentro: <span class="text-danger">{{ rx.6 }}</span></strong></p></td>
+                                            {% else %}
+                                                <td><p class="card-text"><strong>Isocentro:</strong> {{ rx.6 }}</p></td>
+                                            {% endif %}
                                         </tr>
 
                                     </tbody>
@@ -52,7 +64,7 @@
                                                 <th style="text-align:center" scope="col">MU</th>
                                             </thead>
                                             <tbody>
-                                                {% for fld in lin.7%}
+                                                {% for fld in rx.7%}
                                                     <tr>
                                                         <td style="text-align:center"><p class="card-text">{{ fld.0 }}</p></td>
                                                         <td style="text-align:center"><p class="card-text">{{ fld.1 }}</p></td>
@@ -80,8 +92,8 @@
 <!--
     
 
-            {% for lin in rx_list %}
-                {% for fld in lin.7%}
+            {% for rx in rx_list %}
+                {% for fld in rx.7%}
                     <p>ID do campo: {{ fld.0}}</p>
                     <p>Nome do campo: {{ fld.1}}</p>
                     <p>Tipo de campo {{ fld.2}}</p>

@@ -76,7 +76,7 @@ class Manager:
                 fields[y[0x300c,0x0006].value].append(y[0x300a,0x0082].value) #DRP
                 fields[y[0x300c,0x0006].value].append(y[0x300a,0x0084].value) #Dose no DRP (Gy)
                 try:
-                    fields[y[0x300c,0x0006].value].append(str(y[0x300a,0x0086].value)) #MU
+                    fields[y[0x300c,0x0006].value].append(str(round(y[0x300a,0x0086].value, 1))) #MU
                 except:
                     fields[y[0x300c,0x0006].value].append(str(0.0))  #MU
                 rx_field_list.append(fields[y[0x300c,0x0006].value])
