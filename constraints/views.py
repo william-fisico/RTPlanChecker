@@ -68,8 +68,8 @@ def constraints(request):
             teste = ptvDVH.dose_constraint(87.35, volume_units="%").value
             print(f"{teste:.2f}%")'''          
             
-            #ax.xlabel('Dose [%s]' % ptvDVH.dose_units)
-            #ax.ylabel('Volume [%s]' % ptvDVH.volume_units)
+            plt.xlabel('Dose [%s]' % ptvDVH.dose_units)
+            plt.ylabel('Volume [%s]' % ptvDVH.volume_units)
             ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
             plt.show()
 
