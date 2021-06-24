@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'plan_consistency',
     'settings',
     'dicom_manager',
+    'constraints',
 ]
 
 MIDDLEWARE = [
