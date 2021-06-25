@@ -4,7 +4,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import permission_required, login_required
 from dicom_manager.DCM_manager import Manager
 from dicompylercore import dicomparser, dvh, dvhcalc
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import io, base64
 
 def constraints(request):
     context = {}
@@ -71,7 +75,18 @@ def constraints(request):
             plt.xlabel('Dose [%s]' % ptvDVH.dose_units)
             plt.ylabel('Volume [%s]' % ptvDVH.volume_units)
             ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
-            plt.show()
+            fig.set_size_inches(10, 5)
+            plt.tight_layout()
+            #plt.show()
+
+            '''The save and convert to base64 part follows: A new file like object is created using io.BytesIO() and the figure is saved there
+            (fig.savefig(flike)). Then it is converted to a base64 string using the b64 = base64.b64encode(flike.getvalue()).decode().
+            Finally it is just passed to the context of the template as chart.
+            Fonte: https://spapas.github.io/2021/02/08/django-matplotlib/'''
+            flike = io.BytesIO()
+            fig.savefig(flike)
+            b64 = base64.b64encode(flike.getvalue()).decode()
+            context['chart'] = b64
 
 
     return render(request, 'constraints/constraints.html', context)
