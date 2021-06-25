@@ -88,5 +88,4 @@ def constraints(request):
             b64 = base64.b64encode(flike.getvalue()).decode()
             context['chart'] = b64
 
-
     return render(request, 'constraints/constraints.html', context)
