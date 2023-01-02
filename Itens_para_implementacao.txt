@@ -1,0 +1,22 @@
+1. Consistencia do plano
+    1.1. Itens para conferência
+        * Campos no mesmo iso
+        * Campos no mesmo AL
+        * Grade de cálculo
+        * Dose / Prescrição
+            ** Comparar com nome do PTV
+            ** Limitar numero de frações
+            ** Ponto de cálculo
+                *** Dose mínima no ponto de cálculo (90% da prescrição?)
+            ** Curva de prescrição
+        * Nome dos campos
+        * Campos de setup
+            ** Lateralidade do setup
+            ** Tamanho do campo
+        * Bolus
+        * Mesa
+        * Limite de MU (max e min)
+        * Coordenada do marcador CT
+        * Existência de bloco / bandeja nos campos
+        * Tabela CT to ED
+        

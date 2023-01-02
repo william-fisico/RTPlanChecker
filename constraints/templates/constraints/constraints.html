@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    {% if  user.is_authenticated %}
+    <!--
+        {% if file_url %}
+            <p>Arquivo: <a href="{{ file_url }}">{{ file_url }}</a></p>
+        {% endif %}
+    -->
+
+        {% if structures %}
+            <!--{% for st in structures %}
+                <p>{{ st }}</p>
+            {% endfor %}-->
+            <img src='data:image/png;base64,{{ chart }}'>
+        {% else %}
+
+            <center>
+                <h1>Constraints</h1>
+                <br/><br/>
+            </center>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p>Arquivo de dose: <input type="file" name="rtdose_dcm"></p>
+                <p>Arquivo de estruturas: <input type="file" name="rtstructure_dcm"></p>
+                <p><input type="submit" value="Carregar" class="btn btn-primary"></p>
+
+        {% endif %}
+
+
+    {% else %}
+        Fazer login
+    {% endif %}
+
+{% endblock %}

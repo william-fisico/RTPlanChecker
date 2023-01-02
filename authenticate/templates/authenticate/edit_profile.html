@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <h2 class="text-center">Editar Perfil</h2>
+    <div class='col-md6 offset-md-3' action="{% url 'edit_profile' %}">
+        <form method="POST">
+            {% csrf_token %}
+
+            {% if form.errors %}
+              <div class="alert alert-warning alert-dismissable" role="alert">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  <p>O formulário possui erros.</p>
+                  {% for field in form %}
+                    {% if field.errors %}
+                      {{ field.errors }}
+                    {% endif %}
+                  {% endfor %}
+              </div>
+            {% endif %}
+
+            {{ form.as_p}}
+
+            <input type="submit" value="Atualizar" class="btn btn-primary">
+          </form>
+    </div>
+
+{% endblock %}

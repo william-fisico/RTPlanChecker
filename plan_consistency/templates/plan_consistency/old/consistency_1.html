@@ -1,0 +1,150 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    {% if  user.is_authenticated %}
+    <!--
+        {% if file_url %}
+            <p>Arquivo: <a href="{{ file_url }}">{{ file_url }}</a></p>
+        {% endif %}
+    -->
+        {% if is_RTPlan %}
+
+            <div class="card">
+                <h3 class="card-header"><center>Verificação da Consistência do Plano</center></h3>
+                <div class="card-body">
+                    <h6 class="card-title">Paciente: {{ plan_id.0 }}<br/>ID: {{ plan_id.1 }}<br/>Nome do plano: {{ plan_id.2 }}</h6>
+                    {% for rx in rx_list %}
+                        <div class="card">
+                            <h6 class="card-header">Prescrição: {{ rx.0 }}</h6>
+                            <div class="card-body">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td><p class="card-text"><strong>Dose Total (Gy):</strong> {{ rx.1 }}</p></td>
+                                            <td><p class="card-text"><strong>Número de Frações:</strong> {{ rx.2 }}</p></td>
+                                            <td><p class="card-text"><strong>Dose Diária (Gy):</strong> {{ rx.3 }}</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            {% if rx.8.2 is True %}
+                                                <td><p class="card-text"><strong>Orientação do paciente: <span class="text-danger">{{ rx.4 }}</span></strong></p></td>
+                                            {% else %}
+                                                <td><p class="card-text"><strong>Orientação do paciente:</strong> {{ rx.4 }}</p></td>
+                                            {% endif %}
+                                            {% if rx.8.0 is True %}
+                                                <td><p class="card-text"><strong>AL: <span class="text-danger">{{ rx.5 }}</span></strong></p></td>
+                                            {% else %}
+                                                <td><p class="card-text"><strong>AL:</strong> {{ rx.5 }}</p></td>
+                                            {% endif %}
+                                            {% if rx.8.1 is True %}
+                                                <td><p class="card-text"><strong>Isocentro: <span class="text-danger">{{ rx.6 }}</span></strong></p></td>
+                                            {% else %}
+                                                <td><p class="card-text"><strong>Isocentro:</strong> {{ rx.6 }}</p></td>
+                                            {% endif %}
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                
+                                <div class="card">
+                                    <h6 class="card-header">Campos</h6>
+                                    <div class="card-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <th style="text-align:center" scope="col">ID</th>
+                                                <th style="text-align:center" scope="col">Nome</th>
+                                                <th style="text-align:center" scope="col">Tipo de Campo</th>
+                                                <th style="text-align:center" scope="col">Técnica de Tratamento</th>
+                                                <th style="text-align:center" scope="col">Tipo de Feixe</th>
+                                                <th style="text-align:center" scope="col">Energia</th>
+                                                <th style="text-align:center" scope="col">DRP</th>
+                                                <th style="text-align:center" scope="col">Dose DRP (Gy)</th>
+                                                <th style="text-align:center" scope="col">MU</th>
+                                            </thead>
+                                            <tbody>
+                                                {% for fld in rx.7%}
+                                                    <tr>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.0 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.1 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.2 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.3 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.5 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.6 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.9 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.10 }}</p></td>
+                                                        <td style="text-align:center"><p class="card-text">{{ fld.11 }}</p></td>
+                                                    </tr>
+                                                {% endfor %}
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                    {% endfor %}
+                </div>
+            </div>
+
+<!--
+    
+
+            {% for rx in rx_list %}
+                {% for fld in rx.7%}
+                    <p>ID do campo: {{ fld.0}}</p>
+                    <p>Nome do campo: {{ fld.1}}</p>
+                    <p>Tipo de campo {{ fld.2}}</p>
+                    <p>Técnica de tratamento: {{ fld.3}}</p>
+                    {% if fld.12.0 is True%}
+                        <p>AL: {{ fld.4}}</p>
+                    {% endif %}
+                    <p>Tipo de feixe: {{ fld.5}}</p>
+                    <p>Energia: {{ fld.6}}</p>
+                    {% if fld.12.1 is True%}
+                        <p>Isocentro: {{ fld.7}}</p>
+                    {% endif %}
+                    {% if fld.12.2 is True%}
+                        <p>Orientação do paciente: {{ fld.8 }}</p>
+                    {% endif %}
+                    <p>DRP: {{ fld.9}}</p>
+                    <p>Dose no DRP (Gy): {{ fld.10}}</p>
+                    <p>MU: {{ fld.11}}</p>
+                    <p>***********************</p>
+                {% endfor %}
+                <p></p>
+
+            {% endfor %}-->
+        {% else %}
+            <center>
+                <h1>Consistência</h1>
+                <br/><br/>
+                {% for pacs, plans_list in patients.items %}
+                <p>
+		<p>{{ pacs }}</p>
+                        {% for plan in plans_list %}
+                            <p>{{ plan.0 }}</p>
+                        {% endfor %}
+                <p></p>
+            {% endfor %}
+                
+		<form class="form-inline" method="GET">
+ 		<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+  		<select name="drop" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    			<option selected>Choose...</option>
+			{% for pacs, plans_list in patients.items %}
+    				<option value="1">{{ pacs }}</option>
+			{% endfor %}
+  		</select>
+  		<button type="submit" class="btn btn-primary my-1">Submit</button>
+		</form>
+
+        {% endif %}
+
+    {% else %}
+        Fazer login
+    {% endif %}
+
+{% endblock %}

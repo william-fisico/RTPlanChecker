@@ -1,0 +1,99 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    {% if  user.is_authenticated %}
+
+        {% if is_PACSlist %}
+            <center>
+                <h1>Consistência</h1>
+                <br/><br/>
+            </center>
+            <form method="POST" enctype="multipart/form-data" >
+                {% csrf_token %}
+                <select class="form-select" aria-label="Default select example" name="pacs">
+                  <!--<option disable="true" selected>Selecione o paciente</option>-->
+                  {% for pacs in patients %}
+                    <option value="{{ pacs.1 }}">{{ pacs.1 }} - {{ pacs.0 }}</option>
+                  {% endfor %}
+                </select>
+                <input type="submit" value="Selecionar" class="btn btn-primary">
+            </form>
+        {% endif %}
+        {% if is_Planlist %}
+            <center>
+                <h1>Consistência</h1>
+                <br/><br/>
+            </center>
+            <center>
+                <h3>{{ Patient_Id.1 }} - {{ Patient_Id.0 }}</h3>
+                <br/><br/>
+            </center>
+            <form method="POST" enctype="multipart/form-data" >
+                {% csrf_token %}
+                <select class="form-select" aria-label="Default select example" name="rtplan_path">
+                  {% for plan in PlanList %}
+                    <option value="{{ plan.0 }}">{{ plan.1 }}</option>
+                  {% endfor %}
+                </select>
+                <button type="submit" value="{{ Patient_Id.1 }}" class="btn btn-primary" name="pacs2">Carregar</button>
+            </form>
+        {% endif %}
+        {% if is_RTPLAN %}
+            <center>
+                <h1>Consistência</h1>
+                <br/><br/>
+            </center>
+            <center>
+                <h3>{{ Patient_Id.1 }} - {{ Patient_Id.0 }}</h3>
+                <br/><br/>
+                    {% for key, value in RTPLAN_info.items %}
+                        <br/><br/>
+                        Rx = {{ value.0 }}
+                        <br/><br/>
+                        Dose Total = {{ value.1 }} Gy
+                        <br/><br/>
+                        Numero de fracoes = {{ value.2 }}
+                        <br/><br/>
+                        Dose Dia = {{ value.3 }} Gy
+                        <br/><br/>
+                        {% for campos in value.4 %}
+                            Campo = {{ campos }}
+                            <br/><br/>
+                        {% endfor %}
+
+                    {% endfor %}
+                <br/><br/>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <center>
+                                <td>
+                                    <form method="GET" enctype="multipart/form-data" >
+                                        <input type="submit" value="Selecionar Paciente!" class="btn btn-primary">
+                                    </form>
+                                </td>
+                            </center>   
+                            <center>
+                                <!--<td>
+                                    <form method="POST" enctype="multipart/form-data" >
+                                        {% csrf_token %}
+                                        <button type="submit" value="{{ PlanData.1 }}" class="btn btn-primary" name="pacs">Selecionar Plano</button>
+                                    </form>
+                                </td>-->
+                            </center>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </center>
+            
+        {% endif %}
+
+    {% else %}
+        Fazer login
+    {% endif %}
+
+{% endblock %}

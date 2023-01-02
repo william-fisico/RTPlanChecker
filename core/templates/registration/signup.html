@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <center>
+        <h1>Registre sua conta</h1>
+    </center>
+    <br/><br/>
+    {% if submitted %}
+        Conta criada com sucesso!!!
+    {% else %}
+        <form action="" method=POST>
+            {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <input type="submit" name="Submit" class="btn btn-secondary">
+
+        </form>
+    {% endif %}
+    <br/><br/>
+{% endblock %}
