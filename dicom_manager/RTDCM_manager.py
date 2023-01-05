@@ -25,6 +25,8 @@ class Manager:
                 if self.modality == 'RTPLAN' : self.set_rx_prescription()
                 self.set_grid_calc()
                 self.set_roi_list()
+                print(self.structures_list)
+                print(self.ptv_list)
             else:
                 self.dcm_file = None
                 self.ids = None
@@ -87,6 +89,8 @@ class Manager:
             for roi in self.dcm_file[0x3006,0x0020]:
                 structures_list.append((roi[0x3006,0x0022].value,roi[0x3006,0x0026].value))
                 if 'PTV' in roi[0x3006,0x0026].value: ptv_list.append(roi[0x3006,0x0026].value)
+                self.structures_list = structures_list
+                self.ptv_list = ptv_list
         else:
             self.structures_list = None
             self.ptv_list = None
