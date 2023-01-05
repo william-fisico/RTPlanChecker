@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.core.files.storage import FileSystemStorage
 from django.contrib import messages
 from django.contrib.auth.decorators import permission_required, login_required
-from dicom_manager.RTDCM_manager import Manager
+from dicom_manager.RTDCM_manager import Manager, Verify_RTPlan, Verify_RTDose
 #from DCM_manager import Manager
 #from .verify_parameters import VerifyRTPlan
 import os
@@ -114,6 +114,15 @@ def rtplan_consistency(request):
             context['RTPLAN_info'] = rt_plan.get_rtplan_info()
             context['is_RTPLAN'] = True
             context['Patient_Id'] = rt_plan.get_ids()
+            teste = Verify_RTPlan(rt_plan,rt_struct)
+            grid = Verify_RTDose(rt_dose)
+            print('Iso')
+            print(teste.test_isocenter())
+            print('AL')
+            print(teste.test_treatment_unit())
+            print('Grid')
+            print(grid.test_grid())
+
 
         else:
             context['is_PACSlist'] = True

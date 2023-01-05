@@ -1,8 +1,8 @@
 1. Consistencia do plano
     1.1. Itens para conferência
-        * Campos no mesmo iso
-        * Campos no mesmo AL
-        * Grade de cálculo
+        * Campos no mesmo iso - ok
+        * Campos no mesmo AL - ok
+        * Grade de cálculo - ok
         * Dose / Prescrição
             ** Comparar com nome do PTV
             ** Limitar numero de frações
