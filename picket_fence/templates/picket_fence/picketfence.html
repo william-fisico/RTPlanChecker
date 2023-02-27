@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    {% if  user.is_authenticated %}
+
+        <center>
+            <h1>Picket Fence</h1>
+            <br/><br/>
+        </center>
+
+        <div class="card">
+            <h3 class="card-header"><center>Configurações</center></h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td><p class="card-text"><strong>Modelo MLC</strong></p>
+                                <div class="dropdown">
+                                  <button class="btn btn-primary dropdown-toggle" type="button" id="mlc_model" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Modelo MLC
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" value="mlci2">MLCi2</a></li>
+                                    <li><a class="dropdown-item" value="Agility">Agility</a></li>
+                                    <li><a class="dropdown-item" value="beam_modulator">Beam Modulator</a></li>
+                                    <li><a class="dropdown-item" value="millennium">Millennium MLC</a></li>
+                                    <li><a class="dropdown-item" value="millennium">Millennium HDMLC</a></li>
+                                  </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        {% if img %}
+
+            {{ img|safe }}
+
+        {% else %}
+
+            <p>Sem imagem</p>
+
+        {% endif %}
+
+    {% else %}
+        Fazer login
+    {% endif %}
+
+{% endblock %}
+
+

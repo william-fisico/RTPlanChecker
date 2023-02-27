@@ -116,13 +116,6 @@ def rtplan_consistency(request):
             context['Patient_Id'] = rt_plan.get_ids()
             teste = Verify_RTPlan(rt_plan,rt_struct)
             grid = Verify_RTDose(rt_dose)
-            print('Iso')
-            print(teste.test_isocenter())
-            print('AL')
-            print(teste.test_treatment_unit())
-            print('Grid')
-            print(grid.test_grid())
-
 
         else:
             context['is_PACSlist'] = True

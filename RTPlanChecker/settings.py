@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'base',
     'authenticate',
     'plan_consistency',
+    'picket_fence',
     'settings',
     'dicom_manager',
     'constraints',

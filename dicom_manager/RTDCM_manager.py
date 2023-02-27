@@ -25,8 +25,8 @@ class Manager:
                 if self.modality == 'RTPLAN' : self.set_rx_prescription()
                 self.set_grid_calc()
                 self.set_roi_list()
-                print(self.structures_list)
-                print(self.ptv_list)
+                #print(self.structures_list)
+                #print(self.ptv_list)
             else:
                 self.dcm_file = None
                 self.ids = None

@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('authenticate.urls')),
     path('', include('settings.urls')),
     path('', include('plan_consistency.urls')),
+    path('', include('picket_fence.urls')),
     path('', include('constraints.urls')),
 ]
